@@ -445,34 +445,42 @@
 
 
     <!-- ========================= -->
-    <!-- UrbanIng-V2X Dataset Info -->
+    <!-- DrivIng Dataset Info -->
     <!-- ========================= -->
 
     <section class="section hero is-light">
       <div class="container is-max-desktop">
         <h2 class="title is-3">At a Glance</h2>
+
         <div class="content has-text-justified">
           <p>
-            <b>UrbanIng-V2X</b> is a large-scale <b>cooperative perception dataset</b> captured at three intelligent
-            urban intersections in Ingolstadt, Germany.
-            It enables research in <i>multi-vehicle perception</i>, <i>vehicle-to-infrastructure (V2I)</i>, and
-            <i>vehicle-to-vehicle (V2V)</i> communication.
+            <b>DrivIng</b> is a real-world autonomous driving dataset with a fully geo-referenced <b>CARLA digital
+              twin</b>,
+            designed for systematic <i>sim-to-real</i> evaluation and reproducible benchmarking across matched real and
+            simulated environments.
+            It provides synchronized multi-sensor streams (six RGB cameras, LiDAR, and ADMA GNSS/IMU), together with 3D
+            bounding-box annotations for 3D detection, tracking, and multi-modal perception.
           </p>
-          <ul>
-            <li><b>Scenarios:</b> 34 coordinated sequences (~20 s each)</li>
-            <li><b>Objects:</b> ~712k 3D annotated bounding boxes</li>
-            <li><b>Object classes:</b> 13</li>
-            <li><b>Annotation rate:</b> 10 Hz</li>
-            <li><b>License:</b> CC BY-NC-ND 4.0 (non-commercial academic use)</li>
-          </ul>
         </div>
 
         <figure class="image" style="text-align:center; margin-bottom:2rem;">
-          <img src="static/images/TitlePicture.png" alt="UrbanIng-V2X Overview" loading="lazy"
+          <img src="static/images/at_a_glance_real_to_sim.jpg" alt="DrivIng real-world and CARLA digital twin overview"
+            loading="lazy"
             style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.25);" />
           <figcaption class="has-text-centered" style="margin-top:0.5rem;">
-            Overview of the UrbanIng-V2X setup: 2 vehicles, 3 infrastructure intersections, 14 LiDARs, 17 thermal
-            cameras, 12 RGB cameras.
+            This visualization illustrates the core features of DrivIng and its digital twin. The left panel shows a
+            real-world
+            satellite view of the track and its fully geo-referenced digital twin, aligned with a location marker
+            indicating the
+            vehicle’s position. The right panel presents the synchronized sensor suite, including six camera views and a
+            LiDAR
+            frame. The top row displays real-world images, while the bottom row shows the corresponding CARLA simulation
+            with all
+            real-world objects precisely mapped. All images and the LiDAR frame include class-colored 3D bounding boxes
+            for clear
+            object distinction. Satellite image &copy; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid,
+            IGN, IGP,
+            UPR-EGP, and the GIS User Community.
           </figcaption>
         </figure>
       </div>
@@ -481,18 +489,28 @@
     <section class="section">
       <div class="container is-max-desktop">
         <h2 class="title is-3">Dataset Composition</h2>
+
         <div class="content has-text-justified">
           <p>
-            UrbanIng-V2X provides a synchronized and spatially calibrated multi-modal dataset with contributions from
-            both mobile and fixed sensing nodes:
+            DrivIng provides a synchronized and spatially calibrated multi-modal dataset paired with a geo-referenced
+            CARLA
+            digital twin. The dataset is organized into three continuous sequences recorded under different illumination
+            conditions:
           </p>
+
           <ul>
-            <li><b>Vehicles (2):</b> Each equipped with 6 RGB cameras, 1 360° LiDAR, and 1 ADMA GNSS/IMU sensor.</li>
-            <li><b>Infrastructure (up to 3 poles per intersection):</b> Each pole includes 4 LiDAR and multiple thermal
-              cameras for 360° coverage.</li>
-            <li><b>Collected environments:</b> Three distinct intersection layouts in Ingolstadt.</li>
-            <li><b>Applications:</b> Cooperative object detection, tracking, trajectory prediction, and fusion
-              evaluation.</li>
+            <li><b>Sequences (3):</b> Day, Dusk, and Night continuous runs.</li>
+            <li><b>Coverage:</b> ~18 km route spanning urban, suburban, and highway segments (unique track length ~16
+              km).</li>
+            <li><b>Sensors:</b> 6 RGB cameras (360° coverage), 1 LiDAR, and 1 ADMA GNSS/IMU (geo-referencing and
+              motion).</li>
+            <li><b>Annotations:</b> 10 Hz 3D bounding boxes with track IDs in the LiDAR point cloud, aligned to the
+              vehicle reference frame.</li>
+            <li><b>Classes:</b> 12 object categories with class-colored 3D boxes for clear visual distinction.</li>
+            <li><b>Scale:</b> ~63k annotated frames (~378k camera images, ~63k LiDAR frames) and ~1.2M labeled
+              instances.</li>
+            <li><b>Environments:</b> Highway, suburban streets, urban roads, and construction zones.</li>
+            <li><b>Privacy:</b> Faces and license plates are anonymized in camera images.</li>
           </ul>
         </div>
       </div>
@@ -501,20 +519,25 @@
     <section class="section hero is-light">
       <div class="container is-max-desktop">
         <h2 class="title is-3">Calibration Overview</h2>
+
         <div class="content has-text-justified">
           <p>
-            Each sensor within UrbanIng-V2X is temporally synchronized and spatially calibrated.
-            Calibration covers <b>LiDAR-to-camera</b>, <b>LiDAR-to-GNSS/IMU</b>, and <b>infrastructure alignment</b>.
-            The provided calibration files allow reconstruction of precise spatial relationships for fusion or
-            cooperative perception tasks.
+            Each sensor within DrivIng is temporally synchronized and spatially calibrated to support frame-accurate
+            multi-sensor fusion and direct comparison between real-world recordings and the CARLA digital twin.
+            Calibration covers <b>intrinsics</b> for each camera, <b>extrinsics</b> between cameras, LiDAR, and the ADMA
+            GNSS/IMU,
+            and consistent alignment to the vehicle reference frame for reliable 3D annotation projection and
+            evaluation.
           </p>
         </div>
 
         <figure class="image" style="text-align:center; margin-bottom:2rem;">
-          <img src="static/images/calibration_fused_3.png" alt="Calibration overview" loading="lazy"
+          <img src="static/images/sensor_calibration.jpg" alt="Calibration overview for DrivIng" loading="lazy"
             style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.25);" />
           <figcaption class="has-text-centered" style="margin-top:0.5rem;">
-            Temporal synchronization and spatial calibration overview for vehicle and infrastructure sensors.
+            Temporal synchronization and spatial calibration overview for DrivIng’s multi-sensor setup (six cameras,
+            LiDAR, and ADMA GNSS/IMU),
+            supporting consistent real-to-sim alignment and reproducible multi-modal evaluation.
           </figcaption>
         </figure>
       </div>
@@ -523,24 +546,33 @@
     <section class="section">
       <div class="container is-max-desktop">
         <h2 class="title is-3">Coordinate System</h2>
+
         <div class="content has-text-justified">
           <p>
-            All data are expressed in a unified global coordinate system (GC) anchored to the ADMA GNSS/IMU reference
-            frame.
-            Each vehicle’s local frame (x-forward, y-left, z-up) is registered to this global coordinate.
-            Infrastructure LiDARs and cameras are similarly aligned using surveyed extrinsics for interoperability.
+            All sensor data and 3D annotations are provided in a consistent vehicle-centric reference frame to enable
+            reliable multi-sensor fusion and benchmarking. The dataset includes the necessary rigid transforms to map
+            between the individual sensor frames (cameras, LiDAR, IMU) and the vehicle coordinate frame.
+            The coordinate convention follows a standard automotive setup with a right-handed axis definition.
           </p>
         </div>
 
         <figure class="image" style="text-align:center; margin-bottom:2rem;">
-          <img src="static/images/coordinate_fused_v2.png" alt="Coordinate system alignment" loading="lazy"
+          <img src="static/images/vehicle_coordinate_system.png" alt="Vehicle coordinate system and sensor placement"
+            loading="lazy"
             style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.25);" />
           <figcaption class="has-text-centered" style="margin-top:0.5rem;">
-            Coordinate system alignment between vehicles, LiDARs, and infrastructure units.
+            Vehicle coordinate system and sensor placement used in DrivIng. The figure illustrates the six-camera rig,
+            LiDAR position,
+            IMU placement, and the vehicle geometric center, together with the axis convention used for expressing 3D
+            annotations and
+            sensor extrinsics.
           </figcaption>
         </figure>
       </div>
     </section>
+
+
+
 
     <!-- BibTeX citation -->
     <section class="section" id="BibTeX">
