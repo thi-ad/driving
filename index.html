@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="DrivIng">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -15,7 +16,7 @@
   <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
@@ -58,13 +59,13 @@
   <meta name="citation_publication_date" content="2024">
   <meta name="citation_conference_title" content="CONFERENCE_NAME">
   <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,22 +75,25 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
+  <title>DrivIng</title>
+
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
+  <link rel="icon" type="image/x-icon" href="static/images/thi_logo.png">
+  <link rel="apple-touch-icon" href="static/images/thi_logo.png">
+
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+
   <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -97,10 +101,10 @@
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
+
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -108,7 +112,7 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
@@ -162,7 +166,7 @@
     ]
   }
   </script>
-  
+
   <!-- Website/Organization Structured Data -->
   <script type="application/ld+json">
   {
@@ -178,6 +182,7 @@
   }
   </script>
 </head>
+
 <body>
 
 
@@ -186,84 +191,129 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <!-- TODO: Replace with your paper title -->
+              <h1 class="title is-1 publication-title">DrivIng: A Large-Scale Multimodal Driving Dataset with Full
+                Digital Twin Integration</h1>
+
+              <div class="is-size-5 publication-authors" style="line-height: 1.6; text-align: center;">
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                  <a href="#" target="_blank">
+                    Dominik RÖßle</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="#" target="_blank">Xujun Xie</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="#" target="_blank">Dominik Rößle</a><sup>1*</sup>
+                </span>
+                <br>
+                <span class="author-block">
+                  <a href="#" target="_blank">Adithya Mohan</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="#" target="_blank">Venkatesh Thirugnana Sambandham</a><sup>2</sup>,</span>
+                <span class="author-block">
+                  <a href="#" target="_blank">Daniel Cremers</a><sup>2</sup>
+                </span>
+                <br>
+                <span class="author-block">
+                  <a href="#" target="_blank">Torsten Schön</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="#" target="_blank">Werner Huber</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="#" target="_blank">Torsten Schön</a><sup>1</sup>
+                </span>
+              </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
+              <div class="is-size-5 publication-authors">
+                <!-- TODO: Replace with your institution and conference/journal info -->
+                <span class="author-block"><br>NeurIPS 2025</span>
+                <!-- TODO: Remove this line if no equal contribution -->
+                <!-- Equal contribution and affiliations -->
+                <span class="eql-cntrb"
+                  style="display:block; font-size:1.05rem; font-weight:600; color:#000000; margin-top:0.3rem;">
+                  <sup>*</sup>Equal contribution. Authors listed in alphabetical order.
+                </span>
+
+                <span class="eql-cntrb"
+                  style="display:block; font-size:1.05rem; font-weight:600; color:#000000; margin-top:0.3rem;">
+                  <sup>1</sup>Technische Hochschule Ingolstadt
+                </span>
+
+                <span class="eql-cntrb"
+                  style="display:block; font-size:1.05rem; font-weight:600; color:#000000; margin-top:0.2rem;">
+                  <sup>2</sup>Technical University of Munich
+                </span>
+
+
+              </div>
+
+              <!-- ========================= -->
+              <!-- Partner and Institute Logos -->
+              <!-- ========================= -->
+              <section class="section" style="background-color: white;">
+                <div class="container has-text-centered">
+                  <h2 class="title is-4">In Collaboration With</h2>
+                  <div class="columns is-centered is-multiline is-vcentered" style="margin-top: 1.5rem;">
+
+                    <!-- AIMotion Bavaria (slightly larger) -->
+                    <div class="column is-narrow" style="display: flex; justify-content: center; align-items: center;">
+                      <figure class="image"
+                        style="width: 170px; height: 110px; display: flex; align-items: center; justify-content: center;">
+                        <img src="static/images/aimotion.png" alt="AI-Motion Bavaria"
+                          style="max-height:95px; max-width:150px; object-fit:contain;">
+                      </figure>
+                    </div>
+
+                    <!-- CARISSMA -->
+                    <div class="column is-narrow" style="display: flex; justify-content: center; align-items: center;">
+                      <figure class="image"
+                        style="width: 150px; height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="static/images/carissma_logo.png" alt="CARISSMA Research Center"
+                          style="max-height:80px; max-width:130px; object-fit:contain;">
+                      </figure>
+                    </div>
+
+                    <!-- CVIMS -->
+                    <!-- <div class="column is-narrow" style="display: flex; justify-content: center; align-items: center;">
+                      <figure class="image"
+                        style="width: 150px; height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="static/images/cvims_logo.png" alt="CVIMS Research Group"
+                          style="max-height:80px; max-width:130px; object-fit:contain;">
+                      </figure>
+                    </div> -->
+
+                    <!-- THI -->
+                    <div class="column is-narrow" style="display: flex; justify-content: center; align-items: center;">
+                      <figure class="image"
+                        style="width: 150px; height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="static/images/thi_logo.png" alt="Technische Hochschule Ingolstadt"
+                          style="max-height:80px; max-width:130px; object-fit:contain;">
+                      </figure>
+                    </div>
+
+                    <!-- TUM -->
+                    <div class="column is-narrow" style="display: flex; justify-content: center; align-items: center;">
+                      <figure class="image"
+                        style="width: 150px; height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="static/images/tum.png" alt="Technical University of Munich"
+                          style="max-height:80px; max-width:130px; object-fit:contain;">
+                      </figure>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- TODO: Update with your arXiv paper ID -->
+                  <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -271,10 +321,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
+                  <!-- TODO: Add your supplementary material PDF or remove this section -->
+                  <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -282,239 +332,321 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <a href="https://github.com/thi-ad/UrbanIng-V2X/tree/main" target="_blank"
+                      class="external-link button is-medium is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+                  <!-- TODO: Update with your arXiv paper ID -->
+                  <span class="link-block">
+                    <a href="https://www.arxiv.org/pdf/2510.23478" target="_blank"
+                      class="external-link button is-medium is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+    <!-- Teaser video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <!-- Teaser Video -->
+          <div style="text-align: center; margin: 20px 0;">
+            <!-- <iframe width="100%" height="400" src="https://www.youtube.com/embed/F5fXbZHl05A?si=CfmVq118tGo4vaK2"
+              title="UrbanIng-V2X Teaser Video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe> -->
+            <iframe width="969" height="545" src="https://www.youtube.com/embed/f4BbxyWh6fo"
+              title="UrbanIng-V2X Dataset Demonstration" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <!-- TODO: Replace with your video description -->
+          <h2 class="subtitle has-text-centered">
+            A visual overview of UrbanIng-V2X, showcasing synchronized multi-view perception across vehicles and
+            infrastructure. Each frame illustrates 3D bounding-box annotations from cameras and LiDAR sensors,
+            highlighting cooperative perception and object tracking at complex urban intersections in Ingolstadt,
+            Germany.
+          </h2>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
+    <!-- End teaser video -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <!-- TODO: Replace with your paper abstract -->
+              <p>
+                Recent cooperative perception datasets have played a crucial role in advancing
+                smart mobility applications by enabling information exchange between intelligent agents, helping to
+                overcome challenges such as occlusions and improving
+                overall scene understanding. While some existing real-world datasets incorporate both vehicle-to-vehicle
+                and vehicle-to-infrastructure interactions, they are
+                typically limited to a single intersection or a single vehicle. A comprehensive
+                perception dataset featuring multiple connected vehicles and infrastructure sensors
+                across several intersections remains unavailable, limiting the benchmarking of
+                algorithms in diverse traffic environments. Consequently, overfitting can occur,
+                and models may demonstrate misleadingly high performance due to similar intersection layouts and traffic
+                participant behavior. To address this gap, we introduce
+                UrbanIng-V2X, the first large-scale, multi-modal dataset supporting cooperative
+                perception involving vehicles and infrastructure sensors deployed across three
+                urban intersections in Ingolstadt, Germany. UrbanIng-V2X consists of 34 temporally aligned and spatially
+                calibrated sensor sequences, each lasting 20 seconds.
+                All sequences contain recordings from one of three intersections, involving two
+                vehicles and up to three infrastructure-mounted sensor poles operating in coordinated scenarios. In
+                total, UrbanIng-V2X provides data from 12 vehicle-mounted
+                RGB cameras, 2 vehicle LiDARs, 17 infrastructure thermal cameras, and 12 infrastructure LiDARs. All
+                sequences are annotated at a frequency of 10 Hz with 3D
+                bounding boxes spanning 13 object classes, resulting in approximately 712k annotated instances across
+                the dataset. We provide comprehensive evaluations using
+                state-of-the-art cooperative perception methods and publicly release the codebase,
+                dataset, HD map, and a digital twin of the complete data collection environment
+                via https://github.com/thi-ad/UrbanIng-V2X.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- ========================= -->
+    <!-- Table I -->
+    <!-- ========================= -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+    <!-- ========================= -->
+    <!-- UrbanIng-V2X Dataset Info -->
+    <!-- ========================= -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">At a Glance</h2>
+        <div class="content has-text-justified">
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            <b>UrbanIng-V2X</b> is a large-scale <b>cooperative perception dataset</b> captured at three intelligent
+            urban intersections in Ingolstadt, Germany.
+            It enables research in <i>multi-vehicle perception</i>, <i>vehicle-to-infrastructure (V2I)</i>, and
+            <i>vehicle-to-vehicle (V2V)</i> communication.
           </p>
+          <ul>
+            <li><b>Scenarios:</b> 34 coordinated sequences (~20 s each)</li>
+            <li><b>Objects:</b> ~712k 3D annotated bounding boxes</li>
+            <li><b>Object classes:</b> 13</li>
+            <li><b>Annotation rate:</b> 10 Hz</li>
+            <li><b>License:</b> CC BY-NC-ND 4.0 (non-commercial academic use)</li>
+          </ul>
+        </div>
 
+        <figure class="image" style="text-align:center; margin-bottom:2rem;">
+          <img src="static/images/TitlePicture.png" alt="UrbanIng-V2X Overview" loading="lazy"
+            style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.25);" />
+          <figcaption class="has-text-centered" style="margin-top:0.5rem;">
+            Overview of the UrbanIng-V2X setup: 2 vehicles, 3 infrastructure intersections, 14 LiDARs, 17 thermal
+            cameras, 12 RGB cameras.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Dataset Composition</h2>
+        <div class="content has-text-justified">
+          <p>
+            UrbanIng-V2X provides a synchronized and spatially calibrated multi-modal dataset with contributions from
+            both mobile and fixed sensing nodes:
+          </p>
+          <ul>
+            <li><b>Vehicles (2):</b> Each equipped with 6 RGB cameras, 1 360° LiDAR, and 1 ADMA GNSS/IMU sensor.</li>
+            <li><b>Infrastructure (up to 3 poles per intersection):</b> Each pole includes 4 LiDAR and multiple thermal
+              cameras for 360° coverage.</li>
+            <li><b>Collected environments:</b> Three distinct intersection layouts in Ingolstadt.</li>
+            <li><b>Applications:</b> Cooperative object detection, tracking, trajectory prediction, and fusion
+              evaluation.</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Calibration Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Each sensor within UrbanIng-V2X is temporally synchronized and spatially calibrated.
+            Calibration covers <b>LiDAR-to-camera</b>, <b>LiDAR-to-GNSS/IMU</b>, and <b>infrastructure alignment</b>.
+            The provided calibration files allow reconstruction of precise spatial relationships for fusion or
+            cooperative perception tasks.
+          </p>
+        </div>
 
-    <!-- End of Statcounter Code -->
+        <figure class="image" style="text-align:center; margin-bottom:2rem;">
+          <img src="static/images/calibration_fused_3.png" alt="Calibration overview" loading="lazy"
+            style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.25);" />
+          <figcaption class="has-text-centered" style="margin-top:0.5rem;">
+            Temporal synchronization and spatial calibration overview for vehicle and infrastructure sensors.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
 
-  </body>
-  </html>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Coordinate System</h2>
+        <div class="content has-text-justified">
+          <p>
+            All data are expressed in a unified global coordinate system (GC) anchored to the ADMA GNSS/IMU reference
+            frame.
+            Each vehicle’s local frame (x-forward, y-left, z-up) is registered to this global coordinate.
+            Infrastructure LiDARs and cameras are similarly aligned using surveyed extrinsics for interoperability.
+          </p>
+        </div>
+
+        <figure class="image" style="text-align:center; margin-bottom:2rem;">
+          <img src="static/images/coordinate_fused_v2.png" alt="Coordinate system alignment" loading="lazy"
+            style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.25);" />
+          <figcaption class="has-text-centered" style="margin-top:0.5rem;">
+            Coordinate system alignment between vehicles, LiDARs, and infrastructure units.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- BibTeX citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">Citation</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@misc{urbaningv2x2025,
+  title={UrbanIng-V2X: A Large-Scale Multi-Vehicle, Multi-Infrastructure Dataset Across Multiple Intersections for Cooperative Perception},
+  author={Karthikeyan Chandra Sekaran and Markus Geisler and Dominik Rößle and Adithya Mohan and Daniel Cremers and Wolfgang Utschick and Michael Botsch and Werner Huber and Torsten Schön},
+  year={2025},
+  eprint={2510.23478},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2510.23478}
+}</code></pre>
+      </div>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Funding Logos -->
+    <!-- ========================= -->
+    <section class="section" style="background-color: white;">
+      <div class="container has-text-centered">
+        <h2 class="title is-4">Funded by:</h2>
+        <div class="columns is-centered is-multiline is-vcentered" style="margin-top: 1.5rem;">
+
+          <!-- HTA -->
+          <div class="column is-narrow has-text-centered">
+            <figure class="image" style="width:200px; display:flex; justify-content:center;">
+              <img src="static/images/hta.png" alt="Hightech Agenda Bayern"
+                style="max-height:140px; object-fit:contain;">
+            </figure>
+          </div>
+
+          <!-- BMDV -->
+          <div class="column is-narrow has-text-centered">
+            <figure class="image" style="width:200px; display:flex; justify-content:center;">
+              <img src="static/images/1024px-Bundesministerium_für_Verkehr_und_digitale_Infrastruktur_Logo.svg.png"
+                alt="BMDV" style="max-height:140px; object-fit:contain;">
+            </figure>
+          </div>
+
+          <!-- StMWK -->
+          <div class="column is-narrow has-text-centered">
+            <figure class="image" style="width:200px; display:flex; justify-content:center;">
+              <img src="static/images/Bild.png" alt="StMWK Bayern" style="max-height:140px; object-fit:contain;">
+            </figure>
+          </div>
+
+          <!-- Baywiss -->
+          <div class="column is-narrow has-text-centered">
+            <figure class="image" style="width:200px; display:flex; justify-content:center;">
+              <img src="static/images/baywiss.PNG" alt="StMWK Bayern" style="max-height:140px; object-fit:contain;">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section" style="background-color: white;">
+      <div class="container has-text-centered">
+        <h2 class="title is-4">Data Privacy:</h2>
+        <div class="columns is-centered is-multiline is-vcentered" style="margin-top: 1.5rem;">
+
+          <div class="has-text-centered" style="margin-top:1.5rem;">
+            <a href="https://www.thi.de/forschung/aimotion/datarecording/" target="_blank" rel="noopener noreferrer"
+              style="color:#1a73e8; text-decoration:none; font-weight:500;">
+              🔒 Data Privacy Policy (THI)
+            </a>
+          </div>
+
+
+          <footer class="footer">
+            <div class="container">
+              <div class="columns is-centered">
+                <div class="column is-8">
+                  <div class="content">
+
+                    <p>
+                      This page was built using the <a
+                        href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                        Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                        target="_blank">Nerfies</a> project page.
+                      You are free to borrow the source code of this website, we just ask that you link back to
+                      this
+                      page in
+                      the footer. <br> This website is licensed under a <a rel="license"
+                        href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          <!-- Statcounter tracking code -->
+
+          <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+          <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
